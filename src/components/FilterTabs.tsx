@@ -10,14 +10,14 @@ type FilterTabsProps = {
 export function FilterTabs({ activeFilter, filters, resultCount, onChange }: FilterTabsProps) {
   return (
     <section className="filters" aria-labelledby="filter-heading">
-      <div className="filter-header">
-        <h2 id="filter-heading">Project Filters</h2>
-        <p aria-live="polite">
-          Showing {resultCount} {resultCount === 1 ? 'sample' : 'samples'}
-        </p>
+      <div className="command-prompt" aria-hidden="true">
+        &gt;_
       </div>
 
       <div className="filter-tabs" aria-label="Filter project samples">
+        <h2 id="filter-heading" className="sr-only">
+          Project Filters
+        </h2>
         {filters.map((filter) => {
           const isActive = activeFilter === filter.id;
 
@@ -34,6 +34,10 @@ export function FilterTabs({ activeFilter, filters, resultCount, onChange }: Fil
           );
         })}
       </div>
+
+      <p className="view-mode" aria-live="polite">
+        View: grid / {resultCount} shown
+      </p>
     </section>
   );
 }
