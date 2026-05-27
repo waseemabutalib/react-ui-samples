@@ -2,7 +2,7 @@
 
 Small React and TypeScript UI samples for case studies, filters, cards, and accessible interface patterns.
 
-This repository is a public-safe code sample built from scratch with fake/sanitized data. It is not copied from private client work, internal materials, proprietary scripts, or any production project folder.
+This repository is a public-safe code sample built from scratch with fake/sanitized data. It is not copied from private client work, internal materials, proprietary scripts, or any production project.
 
 ## What It Demonstrates
 
