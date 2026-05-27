@@ -1,10 +1,10 @@
 :root {
-  --paper: #f2eadc;
-  --paper-strong: #fbf4e7;
+  --paper: #efe4d1;
+  --paper-strong: #fff7e8;
   --ink: #0d2740;
   --ink-soft: #29425c;
-  --rule: #8fa2aa;
-  --rule-soft: rgba(28, 68, 88, 0.22);
+  --rule: #8da0a9;
+  --rule-soft: rgba(28, 68, 88, 0.2);
   --navy: #082640;
   --teal: #07858b;
   --blue: #1f6caf;
@@ -15,7 +15,7 @@
   color: var(--ink);
   background: var(--paper);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.45;
+  line-height: 1.4;
   font-weight: 400;
 }
 
@@ -33,10 +33,10 @@ body {
   min-height: 100vh;
   background-color: var(--paper);
   background-image:
-    linear-gradient(rgba(11, 48, 75, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 48, 75, 0.045) 1px, transparent 1px),
-    linear-gradient(rgba(153, 118, 64, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(153, 118, 64, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(11, 48, 75, 0.048) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(11, 48, 75, 0.048) 1px, transparent 1px),
+    linear-gradient(rgba(153, 118, 64, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(153, 118, 64, 0.055) 1px, transparent 1px);
   background-size: 48px 48px, 48px 48px, 12px 12px, 12px 12px;
 }
 
@@ -64,26 +64,26 @@ a:focus-visible {
 
 .archive-shell {
   display: grid;
-  grid-template-columns: 152px minmax(0, 1fr) 318px;
-  gap: 26px;
-  width: min(1480px, 100%);
+  grid-template-columns: 144px minmax(0, 1fr) 292px;
+  gap: 22px;
+  width: min(1450px, 100%);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 20px 22px 28px 0;
+  padding: 14px 18px 24px 0;
 }
 
 .index-rail {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
-  min-height: calc(100vh - 48px);
+  min-height: calc(100vh - 38px);
   border-right: 1px solid var(--navy);
   color: var(--ink);
 }
 
 .index-plate {
   display: grid;
-  gap: 8px;
-  padding: 34px 20px 26px;
+  gap: 6px;
+  padding: 28px 18px 22px;
   background: var(--navy);
   color: #fffaf0;
 }
@@ -107,7 +107,7 @@ a:focus-visible {
 .index-plate span {
   position: relative;
   padding-left: 18px;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -115,23 +115,23 @@ a:focus-visible {
 .index-plate span::before {
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 1px;
   width: 3px;
-  height: 34px;
+  height: 32px;
   background: #fffaf0;
   content: "";
 }
 
 .index-plate strong {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.28rem;
   letter-spacing: 0;
 }
 
 .rail-nav {
   display: grid;
-  gap: 28px;
-  padding: 42px 20px 36px;
+  gap: 24px;
+  padding: 38px 18px 30px;
 }
 
 .rail-link {
@@ -144,7 +144,7 @@ a:focus-visible {
 
 .rail-link::before {
   width: 4px;
-  min-height: 48px;
+  min-height: 46px;
   background: var(--rail);
   content: "";
 }
@@ -178,28 +178,28 @@ a:focus-visible {
 
 .rail-link span {
   color: var(--teal);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 800;
 }
 
 .rail-link b {
   margin-top: 3px;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
 }
 
 .rail-tools {
   align-self: end;
-  margin: 0 18px 28px;
-  padding: 18px 0;
+  margin: 0 16px 24px;
+  padding: 15px 0;
   border-top: 1px solid var(--rule-soft);
   border-bottom: 1px solid var(--rule-soft);
 }
 
 .rail-tools p {
-  margin: 16px 0 3px;
+  margin: 14px 0 2px;
   color: var(--ink-soft);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   text-transform: uppercase;
 }
 
@@ -210,31 +210,31 @@ a:focus-visible {
 .rail-tools strong {
   display: block;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
 }
 
 .view-buttons {
   display: flex;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .view-buttons span {
-  width: 38px;
-  height: 34px;
+  width: 34px;
+  height: 30px;
   border: 1px solid var(--rule);
   background:
-    linear-gradient(90deg, var(--ink) 2px, transparent 2px) 11px 9px / 8px 8px repeat,
+    linear-gradient(90deg, var(--ink) 2px, transparent 2px) 9px 8px / 8px 8px repeat,
     var(--paper-strong);
 }
 
 .rail-version {
   display: grid;
-  gap: 6px;
-  padding: 0 20px 26px;
+  gap: 5px;
+  padding: 0 18px 22px;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   text-transform: uppercase;
 }
 
@@ -244,30 +244,30 @@ a:focus-visible {
 
 .rail-version em {
   width: fit-content;
-  margin-top: 18px;
+  margin-top: 14px;
   border: 1px solid #b84f33;
-  padding: 10px 11px;
+  padding: 9px 10px;
   color: #a33f2d;
   font-style: normal;
 }
 
 .archive-main {
   min-width: 0;
-  padding: 18px 0 0 26px;
+  padding: 14px 0 0 24px;
   border-left: 1px dashed rgba(13, 39, 64, 0.42);
 }
 
 .archive-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 294px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 278px;
+  gap: 22px;
   border-bottom: 2px solid var(--rule);
-  padding: 0 0 26px;
+  padding: 0 0 18px;
 }
 
 .title-block {
   display: grid;
-  gap: 12px;
+  gap: 9px;
 }
 
 .file-label {
@@ -276,7 +276,7 @@ a:focus-visible {
   gap: 16px;
   margin: 0;
   color: var(--ink-soft);
-  font-size: 0.87rem;
+  font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -299,55 +299,55 @@ h1 {
   margin-bottom: 0;
   color: var(--navy);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 3.1rem;
-  line-height: 1.02;
+  font-size: 2.72rem;
+  line-height: 1.01;
   letter-spacing: 0;
 }
 
 .intro-copy {
-  max-width: 680px;
-  margin-bottom: 4px;
+  max-width: 660px;
+  margin-bottom: 0;
   color: var(--ink-soft);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.94rem;
+  font-size: 0.84rem;
   font-style: italic;
 }
 
 .hero-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
 }
 
 .hero-tags span {
   border: 1px solid var(--teal);
-  padding: 6px 12px;
-  background: rgba(255, 250, 240, 0.75);
+  padding: 5px 10px;
+  background: rgba(255, 247, 232, 0.75);
   color: var(--teal);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
 }
 
 .archive-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-self: start;
-  margin: 26px 0 0;
+  margin: 18px 0 0;
   border-left: 1px solid var(--rule);
   border-top: 1px solid var(--rule);
 }
 
 .archive-meta div {
-  min-height: 72px;
-  padding: 13px 16px;
+  min-height: 62px;
+  padding: 11px 14px;
   border-right: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }
 
 .archive-meta dt {
-  margin-bottom: 7px;
+  margin-bottom: 6px;
   color: var(--ink-soft);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -356,17 +356,17 @@ h1 {
   margin: 0;
   color: var(--teal);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 1.16rem;
+  font-size: 1.03rem;
   font-weight: 900;
 }
 
 .filters {
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr) 142px;
+  grid-template-columns: 48px minmax(0, 1fr) 132px;
   align-items: stretch;
-  margin: 14px 0 20px;
+  margin: 12px 0 16px;
   border: 1px solid var(--rule);
-  background: rgba(255, 250, 240, 0.58);
+  background: rgba(255, 247, 232, 0.58);
 }
 
 .command-prompt,
@@ -380,28 +380,35 @@ h1 {
   place-items: center;
   border-right: 1px solid var(--rule);
   color: var(--ink);
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   font-weight: 800;
 }
 
 .filter-tabs {
   display: grid;
-  grid-template-columns: repeat(5, minmax(96px, 1fr));
+  grid-template-columns: repeat(5, minmax(88px, 1fr));
 }
 
 .filter-tab {
-  min-height: 42px;
+  position: relative;
+  min-height: 38px;
   border: 0;
   border-right: 1px solid var(--rule);
   border-radius: 0;
   background: transparent;
   color: var(--ink);
   cursor: pointer;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
 }
 
 .filter-tab:hover {
-  background: rgba(7, 133, 139, 0.08);
+  background: rgba(207, 106, 44, 0.09);
+}
+
+.filter-tab:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: -3px;
+  background: rgba(207, 106, 44, 0.08);
 }
 
 .filter-tab[aria-pressed='true'] {
@@ -409,12 +416,22 @@ h1 {
   color: #fffaf0;
 }
 
+.filter-tab[aria-pressed='true']::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--rust);
+  content: "";
+}
+
 .view-mode {
   display: grid;
   place-items: center;
   margin: 0;
   color: var(--teal);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -422,14 +439,14 @@ h1 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 20px 22px;
+  gap: 16px 18px;
 }
 
 .project-card {
   --accent: var(--teal);
   display: grid;
-  grid-template-columns: 52px minmax(0, 1fr);
-  min-height: 330px;
+  grid-template-columns: 48px minmax(0, 1fr);
+  min-height: 284px;
   color: var(--ink);
 }
 
@@ -439,6 +456,11 @@ h1 {
 
 .project-card--ux-web {
   --accent: var(--blue);
+}
+
+.project-card--ux-web .dossier-sheet {
+  border-color: rgba(207, 106, 44, 0.8);
+  box-shadow: 0 13px 20px rgba(13, 39, 64, 0.11), inset 0 0 0 1px rgba(207, 106, 44, 0.28);
 }
 
 .project-card--systems {
@@ -453,24 +475,24 @@ h1 {
   display: grid;
   grid-template-rows: auto 1fr;
   justify-items: center;
-  padding: 14px 0;
+  padding: 12px 0;
   background: var(--accent);
   color: #fffaf0;
-  box-shadow: 0 16px 22px rgba(13, 39, 64, 0.16);
+  box-shadow: 0 12px 18px rgba(13, 39, 64, 0.14);
 }
 
 .card-spine span {
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   border-bottom: 2px solid rgba(255, 250, 240, 0.72);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.18rem;
   font-weight: 700;
 }
 
 .card-spine b {
   align-self: center;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   letter-spacing: 0;
   text-transform: uppercase;
   transform: rotate(180deg);
@@ -484,9 +506,9 @@ h1 {
   min-width: 0;
   border: 1px solid var(--rule);
   border-left: 0;
-  background: rgba(255, 250, 240, 0.83);
-  box-shadow: 0 16px 24px rgba(13, 39, 64, 0.12);
-  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+  background: rgba(255, 247, 232, 0.9);
+  box-shadow: 0 13px 20px rgba(13, 39, 64, 0.1);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px));
 }
 
 .dossier-sheet::before {
@@ -496,7 +518,7 @@ h1 {
   background-image:
     linear-gradient(rgba(13, 39, 64, 0.035) 1px, transparent 1px),
     linear-gradient(90deg, rgba(13, 39, 64, 0.035) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-size: 22px 22px;
   content: "";
 }
 
@@ -509,15 +531,15 @@ h1 {
 
 .dossier-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 28px;
-  gap: 14px;
-  padding: 16px 16px 10px;
+  grid-template-columns: minmax(0, 1fr) 24px;
+  gap: 12px;
+  padding: 13px 14px 8px;
 }
 
 .card-kicker {
-  margin: 0 0 7px;
+  margin: 0 0 5px;
   color: var(--accent);
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -526,15 +548,15 @@ h1 {
   margin: 0;
   color: var(--navy);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
-  line-height: 1.1;
+  font-size: 1.24rem;
+  line-height: 1.08;
   letter-spacing: 0;
 }
 
 .document-mark {
   position: relative;
-  width: 21px;
-  height: 26px;
+  width: 19px;
+  height: 24px;
   border: 1px solid var(--accent);
   align-self: start;
 }
@@ -558,15 +580,15 @@ h1 {
 }
 
 .dossier-row {
-  padding: 10px 16px;
+  padding: 8px 14px;
   border-top: 1px dashed rgba(13, 39, 64, 0.38);
 }
 
 .dossier-row span {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: var(--ink);
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -575,7 +597,7 @@ h1 {
 .dossier-row li,
 .dossier-table dd {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.76rem;
+  font-size: 0.7rem;
 }
 
 .dossier-row p {
@@ -585,9 +607,9 @@ h1 {
 
 .dossier-row ul {
   display: grid;
-  gap: 3px;
+  gap: 2px;
   margin: 0;
-  padding-left: 16px;
+  padding-left: 14px;
 }
 
 .dossier-table {
@@ -597,20 +619,20 @@ h1 {
 
 .dossier-table div {
   display: grid;
-  grid-template-columns: 78px minmax(0, 1fr);
+  grid-template-columns: 70px minmax(0, 1fr);
   border-bottom: 1px solid var(--rule-soft);
 }
 
 .dossier-table dt,
 .dossier-table dd {
   margin: 0;
-  padding: 8px 12px;
+  padding: 6px 10px;
 }
 
 .dossier-table dt {
   border-right: 1px solid var(--rule-soft);
   color: var(--ink-soft);
-  font-size: 0.7rem;
+  font-size: 0.64rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -622,12 +644,12 @@ h1 {
 .dossier-footer {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  padding: 9px 16px 10px;
+  gap: 10px;
+  padding: 7px 14px 8px;
   border-top: 1px solid var(--rule-soft);
   color: var(--accent);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.72rem;
+  font-size: 0.66rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -635,28 +657,28 @@ h1 {
 .blueprint-footer {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
-  margin-top: 20px;
-  padding: 14px 0 0;
+  gap: 24px;
+  margin-top: 14px;
+  padding: 10px 0 0;
   color: var(--ink-soft);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
 }
 
 .details-panel {
   position: sticky;
-  top: 20px;
+  top: 14px;
   align-self: start;
-  min-height: calc(100vh - 48px);
+  min-height: calc(100vh - 32px);
   border: 1px solid rgba(13, 39, 64, 0.58);
-  background: rgba(255, 250, 240, 0.78);
-  padding: 28px 26px 0;
+  background: rgba(255, 247, 232, 0.78);
+  padding: 24px 22px 0;
 }
 
 .panel-menu {
   position: absolute;
-  top: 22px;
-  right: 20px;
+  top: 20px;
+  right: 18px;
   display: grid;
   gap: 4px;
 }
@@ -673,36 +695,36 @@ h1 {
   margin: 0;
   color: var(--ink);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.96rem;
+  font-size: 0.88rem;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .detail-list {
   display: grid;
-  margin: 24px 0 24px;
+  margin: 20px 0 20px;
   border-top: 1px solid var(--rule);
 }
 
 .detail-list div {
   display: grid;
-  grid-template-columns: 44px minmax(0, 1fr);
+  grid-template-columns: 38px minmax(0, 1fr);
   align-items: center;
-  gap: 14px;
-  padding: 15px 0;
+  gap: 12px;
+  padding: 12px 0;
   border-bottom: 1px dashed rgba(13, 39, 64, 0.36);
 }
 
 .detail-list p {
   margin: 0;
-  font-size: 0.82rem;
+  font-size: 0.76rem;
 }
 
 .detail-icon {
   position: relative;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 27px;
+  height: 27px;
   border: 2px solid var(--ink-soft);
 }
 
@@ -718,7 +740,7 @@ h1 {
 .detail-icon--records::before {
   left: 6px;
   right: 6px;
-  top: 8px;
+  top: 7px;
   height: 2px;
   box-shadow: 0 6px 0 var(--ink-soft), 0 12px 0 var(--ink-soft);
 }
@@ -735,7 +757,7 @@ h1 {
 }
 
 .detail-icon--layout::after {
-  left: 13px;
+  left: 12px;
   bottom: -8px;
   width: 2px;
   height: 8px;
@@ -748,15 +770,15 @@ h1 {
 
 .detail-icon--access::before {
   position: absolute;
-  inset: 5px 12px;
+  inset: 5px 11px;
   border-left: 2px solid var(--ink-soft);
   content: "";
 }
 
 .detail-icon--safe::before {
   position: absolute;
-  left: 8px;
-  top: 5px;
+  left: 7px;
+  top: 4px;
   width: 10px;
   height: 15px;
   border-right: 2px solid var(--ink-soft);
@@ -767,7 +789,7 @@ h1 {
 
 .system-notes {
   border-top: 1px dashed rgba(13, 39, 64, 0.45);
-  padding-top: 22px;
+  padding-top: 18px;
 }
 
 .note-heading {
@@ -775,41 +797,41 @@ h1 {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
 .note-heading span {
   color: var(--teal);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   font-weight: 800;
 }
 
 .system-notes p {
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--ink-soft);
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
 }
 
 .system-notes dl {
   display: grid;
-  gap: 5px;
+  gap: 4px;
   margin: 0;
   border-top: 1px dashed rgba(13, 39, 64, 0.35);
-  padding-top: 16px;
+  padding-top: 13px;
 }
 
 .system-notes div {
   display: grid;
-  grid-template-columns: 92px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 8px;
 }
 
 .system-notes dt,
 .system-notes dd {
   margin: 0;
-  font-size: 0.72rem;
+  font-size: 0.66rem;
 }
 
 .system-notes dt {
@@ -819,18 +841,20 @@ h1 {
 }
 
 .panel-footnote {
-  margin: 24px -26px 0;
+  position: relative;
+  margin: 20px -22px 0;
   border-top: 1px solid rgba(13, 39, 64, 0.45);
-  padding: 18px 26px 20px 44px;
+  padding: 16px 22px 18px 40px;
   color: var(--ink-soft);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
 }
 
 .panel-footnote::before {
   position: absolute;
+  left: 22px;
+  top: 16px;
   width: 3px;
-  height: 36px;
-  margin-left: -20px;
+  height: 34px;
   background: var(--teal);
   content: "";
 }
@@ -838,7 +862,7 @@ h1 {
 @media (max-width: 1180px) {
   .archive-shell {
     grid-template-columns: 132px minmax(0, 1fr);
-    padding-right: 20px;
+    padding-right: 18px;
   }
 
   .details-panel {
@@ -882,7 +906,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2.35rem;
+    font-size: 2.28rem;
   }
 
   .archive-meta {
