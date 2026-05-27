@@ -17,7 +17,7 @@ export function FilterTabs({ activeFilter, filters, resultCount, onChange }: Fil
         </p>
       </div>
 
-      <div className="filter-tabs" role="tablist" aria-label="Filter project samples">
+      <div className="filter-tabs" aria-label="Filter project samples">
         {filters.map((filter) => {
           const isActive = activeFilter === filter.id;
 
@@ -26,8 +26,6 @@ export function FilterTabs({ activeFilter, filters, resultCount, onChange }: Fil
               key={filter.id}
               className="filter-tab"
               type="button"
-              role="tab"
-              aria-selected={isActive}
               aria-pressed={isActive}
               onClick={() => onChange(filter.id)}
             >
